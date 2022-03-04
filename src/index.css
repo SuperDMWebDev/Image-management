@@ -1,13 +1,102 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.upload-file-container { 
+	position: relative; 
+	width: 100px; 
+	height: 137px; 
+	overflow: hidden;	
+	background: url(http://i.imgur.com/AeUEdJb.png) top center no-repeat;
+	float: left;
+	margin-left: 23px;
+} 
+.upload-file-container-text > span{
+	border-bottom: 1px solid #719d2b;
+	cursor: pointer;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.upload-file-container-text{
+	font-family: Arial, sans-serif;
+	font-size: 12px;
+	color: #719d2b;
+	line-height: 17px;
+	text-align: center;
+	display: block;
+	position: absolute; 
+	left: 0; 
+	bottom: 0; 
+	width: 100px; 
+	height: 35px;
+}
+.one_opacity_0 {
+    opacity: 0;
+    height: 0;
+    width: 1px;
+    float: left;
+}
+#preview_image {
+    display: none;
+    width: 90px;
+    height: 90px;
+    margin: 2px 0px 0px 5px;
+    border-radius: 10px;
+  }
+
+  .input-file-row-1{
+    display: inline-block;
+	margin-top: 25px;
+	position: relative;
+}
+.input-file-row-1:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}  
+button
+{
+  background-color: transparent;
+    outline: none;
+    border-bottom: 1px solid #719d2b;
+    cursor: pointer;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    color: #719d2b;
+    /* line-height: 17px; */
+    text-align: center;
+}
+
+/* container*/
+.app__container{
+   background-color:#f5f5f5;
+}
+.home-product-item {
+  background-color: #fff;
+  margin-top: 10px;
+  position: relative;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  box-shadow: 0 0.1rem 0.2rem 0 rgb(0 0 0 / 10%);
+  overflow: hidden;
+  cursor: pointer;
+}
+.list-image{
+ 
+    background-size: cover;
+    width: 120px;
+    height: 120px;
+    background-repeat: no-repeat;
+   
+}
+/* icon*/
+.overflow{
+  display:flex;
+  position:absolute;
+  
+}
+.tool {
+  display: flex;
+  justify-content: space-around;
 }
