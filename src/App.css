@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  background-color: #d5e1df;
 }
 
 .App-logo {
@@ -35,4 +36,13 @@
   to {
     transform: rotate(360deg);
   }
+}
+@keyframes appear {
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+  
 }

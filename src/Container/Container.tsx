@@ -1,7 +1,8 @@
 import React, { useEffect, useState,MouseEvent } from 'react';
 import { ListImage, PropsContainer } from '../utils/interface';
-import Image1 from './ImageElement';
+import ImageElement from './ImageElement';
 function Container(props:PropsContainer){
+    console.log(ImageElement);
     const {listImage, setListImage} = props;
     
     // const [valueInput,setValueInput]=useState(listImage.name);
@@ -32,7 +33,7 @@ function Container(props:PropsContainer){
                 <div className="row">
 
                     {listImage.map((image,index)=>(
-                            <Image1  key={index} image={image} index={index} func1={deleteImage} func2={changeImage}/>
+                            <ImageElement  key={index} image={image} index={index} func1={deleteImage} func2={changeImage}/>
                     ))}
                         
                     

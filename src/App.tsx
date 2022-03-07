@@ -156,7 +156,7 @@ let props={
 
                 <div className="upload-file-container-text">
                     <div className = 'one_opacity_0'>
-                        <input ref={inputImage} type="file" id="patient_pic"  onChange={Change}  multiple />
+                        <input ref={inputImage} type="file" id="patient_pic"  onChange={Change}  multiple accept="image/*"/>
                     </div>
                     <span>
                             Add photo

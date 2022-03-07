@@ -1,7 +1,7 @@
 import React, { useRef, useEffect, MutableRefObject, RefObject } from "react";
 
 /**
- * Hook that alerts clicks outside of the passed ref
+ * Su dung outsideAlerter de nhan ra ngoai mot element dua tren rè cua no 
  */
 function useOutsideAlerter<T extends HTMLElement = HTMLElement>(
     ref: RefObject<T>,
